@@ -1,0 +1,5 @@
+[THINGSPEAK]
+TOPICO_PUBLISH=channels/<id_canal>/publish/<chave_api_escrita_canal>
+TOPICO_SUBSCRIBE=channels/<id_canal>/subscribe/json/<chave_api_leitura_canal>
+USERNAME=
+MQTT_API_KEY=
