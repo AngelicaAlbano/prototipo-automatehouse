@@ -12,8 +12,8 @@ topico=config['THINGSPEAK']['TOPICO_PUBLISH']
 valor_movimento=0
 
 while(True):
-   valor_movimento= random.randint(0,1) # Se 1 -> ABRIU
-   dados = "field1={:.2f}&status=ABRIU".format(valor_movimento)
+   valor_movimento= random.randint(0,1)
+   dados = "field1={:.2f}&status=MQTTSUBMIT".format(valor_movimento)
    publish.single(payload=dados,topic=topico,port=port,hostname=broker)
    print(dados)
    time.sleep(20)

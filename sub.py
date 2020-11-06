@@ -11,7 +11,7 @@ def on_message(client,userdate,message):
     dados=json.loads(str(message.payload.decode()))
     if dados['field1'] == '1.00':
         pygame.mixer.music.play()
-        print("Tocar musica na sala")
+        print("Tocar música na sala")
     else:
         pygame.mixer.music.stop()
 
